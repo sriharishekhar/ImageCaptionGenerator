@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset=utf-8 />
+<style>
+li{
+	list-style: circle;
+	color: black;
+	text-shadow: -2px 2px 2px rgba(31,34,32,0.5);
+	font-size: 20px;
+
+	padding-bottom: 10px;
+}    
+
+ul{
+	margin-top: 100px;
+	margin-left: 150px;
+
+}
+
+h2{
+  text-align: center;
+  color: rgba(32,34,31,1);
+  font-weight: bolder;
+  text-shadow: -8px 8px 3px rgba(32,34,31,0.3);
+
+}
+
+
+</style>
+</head>
+<body style="background: #e3e3e3;">
+<h2>
+	These are the following tags corresponding to that particular image:
+</h2>
+	<ul>
+   {% for item in obj1 %}
+         <li>{{ item }}</li>
+   {% endfor %}
+   
+</ul>
+</body>
+
+
+</html>
